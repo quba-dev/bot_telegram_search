@@ -48,7 +48,6 @@ async def bot_message(message: types.Message):
             await bot.send_message(message.from_user.id,f'{key}:{string}')
 
     else:
-        # --- На самом деле я бы мог разделить на структуры, как сделал это с кнопками, но я в последний момент дедлайна освободился, поэтому набросал этот код) Прастите---#
         # --- Реализован парсиг и поиск по двум онлайн-кинотеатрам hdrezka.re && megogo.net --- #
         def get_html(url): 
             headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15'}
